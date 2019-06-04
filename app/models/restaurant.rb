@@ -38,12 +38,12 @@ class Restaurant
 
   def longest_review
     # Returns longest review content for given restaurant
-    reviews ? review_content_size(reviews.first) : longest_content = 0
+    reviews ? longest_content = review_content_size(reviews.first) : longest_content = 0
     result = reviews.first
     reviews.each do |review|
       review_content_size(review) > longest_content ? result = reviews.first : nil
     end
-    result.content
+    result ? result.content : nil
   end
 
 end
