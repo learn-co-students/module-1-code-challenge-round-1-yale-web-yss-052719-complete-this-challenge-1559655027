@@ -1,0 +1,10 @@
+#- `Customer.all`
+#  - should return **all** of the customer instances
+#  - returns an array of all restaurants
+#- `Review.all`
+#  - returns all of the reviews
+
+  attr_reader :customer, :restaurant, :review
+
+  @@all = []
+  
