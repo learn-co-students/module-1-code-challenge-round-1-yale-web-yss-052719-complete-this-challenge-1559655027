@@ -33,7 +33,7 @@ We've provided you with a console that you can use to test your code. To enter a
   - returns an array of all restaurants
 - `Review.all`
   - returns all of the reviews
-  
+
 ### Associations and Aggregate Methods
 
 #### Customer
