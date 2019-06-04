@@ -15,11 +15,14 @@ restaurant1 = Restaurant.new("Taco Bell")
 restaurant2 = Restaurant.new("Pizza Hut")
 restaurant3 = Restaurant.new("Olive Garden")
 
-review1 = customer1.add_review(restaurant1, "a", 1)
-review2 = customer2.add_review(restaurant2, "a", 1)
+review1 = customer1.add_review(restaurant1, "a", -1)
+review2 = customer2.add_review(restaurant2, "a", 9)
 review3 = customer3.add_review(restaurant3, "a", 1)
-review4 = customer1.add_review(restaurant2, "abcde", 1)
-customer1.add_review(restaurant3, "abcde", 1)
+# review4 = customer1.add_review(restaurant2, 10123, 1)
+# review4 = customer3.add_review(restaurant2, "abcde", 1)
+# review5 = customer3.add_review(restaurant2, "abcde", 1.0)
+# review6 = customer3.add_review(restaurant2, "abcde", "hello")
+# customer1.add_review(restaurant3, "abcde", 1)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
