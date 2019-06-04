@@ -21,7 +21,7 @@ end
 
 # Add reviews
 (0..10).each do |i|
-  customers.sample.add_review(restaurants.sample, "You suck!", 6)
+  customers.sample.add_review(restaurants.sample, content.sample, 6)
 end
 
 a = restaurants.map {|r| r.reviews }
