@@ -37,9 +37,12 @@ class Customer
   end
 
   def self.find_by_name(name)
-    temp = name.split(" ")
+    # temp = name.split(" ")
+    # self.all.find do |customer|
+    #   customer.first_name == temp[0] && customer.last_name == temp[1] 
+    # end
     self.all.find do |customer|
-      customer.first_name == temp[0] && customer.last_name == temp[1] 
+      customer.full_name == name
     end
   end
 
