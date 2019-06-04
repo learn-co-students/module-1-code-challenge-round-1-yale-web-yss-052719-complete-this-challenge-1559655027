@@ -12,7 +12,7 @@ class Restaurant
   end
 
 
-  #self made method - return all rev instance for res
+  # return all rev instance for res in arr
   def reviews
     Review.all.select do |rev|
       rev.restaurant == self
@@ -24,12 +24,6 @@ class Restaurant
       rev.customer
     end.uniq
   end
-
-  # def reviews
-  #   self.rev.map do |rev|
-  #     rev.restaurant
-  #   end
-  # end
 
   def average_star_rating
     num = 0
@@ -59,3 +53,10 @@ class Restaurant
 
 end
 
+
+
+  # def reviews
+  #   self.rev.map do |rev|
+  #     rev.restaurant
+  #   end
+  # end

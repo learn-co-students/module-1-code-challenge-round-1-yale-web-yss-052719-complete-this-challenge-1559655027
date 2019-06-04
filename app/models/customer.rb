@@ -19,7 +19,7 @@ class Customer
     Review.new(self, restaurant, content, rating)
   end
 
-  #self method on all rev instances by this customer
+  #return all rev instances by this customer in arr
   def reviews
     Review.all.select do |review|
       review.customer == self
